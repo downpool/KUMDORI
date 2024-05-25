@@ -16,37 +16,18 @@ var Foods: [String: CLLocation] = [
     "옛터": CLLocation(latitude: 36.2147428, longitude: 127.4405483),
     "봉이호떡": CLLocation(latitude: 36.2001311, longitude: 127.4490255),
     "누오보나폴리": CLLocation(latitude: 36.3619529, longitude: 127.3530053),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    
+    "귀빈돌솥밥": CLLocation(latitude: 36.3663744, longitude: 127.3805022),
+    "오씨칼국수": CLLocation(latitude: 36.3419729, longitude: 127.4250897),
+    "동천홍": CLLocation(latitude: 36.36100649999999, longitude: 127.3772912),
+    "일당감자탕": CLLocation(latitude: 36.3564739, longitude: 127.3381428)  
 
 ]
 
 
 var Tour: [String: CLLocation] = [
     "한빛탑": CLLocation(latitude: 36.3765465, longitude: 127.388132),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-    "": CLLocation(latitude: , longitude: ),
-]
-
-
+    "엑스포다리": CLLocation(latitude: 36.37271490000001, longitude: 127.3879907),
+    "용수골": CLLocation(latitude: 36.3384867, longitude: 127.4574456),
+    "스카이로드": CLLocation(latitude:36.3282357 , longitude: 127.4283342),
+    "뿌리공원": CLLocation(latitude:36.291277545077676, longitude: 127.3878003467211)
+    ]
