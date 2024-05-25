@@ -10,7 +10,7 @@ import SwiftUI
 struct MovePages: View {
     // 뷰 배열 선언
     var pages: [AnyView] = [
-        AnyView(GroundView()),
+        AnyView(OutsideView()),
         AnyView(MainView()),
         AnyView(KitchenView()),
         AnyView(BedroomView())
@@ -18,20 +18,27 @@ struct MovePages: View {
 
     var body: some View {
         // 스와이프 가능한 탭 뷰
-        TabView {
-            ForEach(0..<pages.count, id: \.self) { index in
-                pages[index]
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                    .background(Color.gray.opacity(0.2))
+        NavigationStack {
+            ZStack {
+                TabView {
+                    ForEach(0 ..< pages.count, id: \.self) { index in
+                        pages[index]
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                            
+                            .background(Color.gray.opacity(0.2))
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) // 탭 뷰 스타일 설정
+                
             }
+            
         }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) // 탭 뷰 스타일 설정
-        .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
 #Preview {
-    MovePages(pages: [AnyView(GroundView()),
+    MovePages(pages: [AnyView(OutsideView()),
               AnyView(MainView()),
               AnyView(KitchenView()),
               AnyView(BedroomView())])

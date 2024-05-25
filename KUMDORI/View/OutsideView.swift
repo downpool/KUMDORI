@@ -31,9 +31,7 @@ struct OutsideView: View {
                     }
                     
                 }
-            }
-                
-               
+            }  
             }
         }
         

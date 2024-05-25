@@ -21,11 +21,8 @@ struct BedroomView: View {
                 
                 Spacer()
                 
-                
                 HStack {
-                    NavigationLink(destination: Maps()) {
-                        Image("map")
-                    }
+                   
                     
                 }
             }

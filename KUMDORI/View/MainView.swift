@@ -48,8 +48,6 @@ struct MainView: View {
                     
                 }
             }
-                
-               
             }
         }
         
