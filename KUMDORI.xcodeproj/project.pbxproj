@@ -11,6 +11,7 @@
 		2B5CA8662C01EA0900CC8CE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8652C01EA0900CC8CE6 /* ContentView.swift */; };
 		2B5CA8682C01EA0A00CC8CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */; };
 		2B5CA86B2C01EA0A00CC8CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA86A2C01EA0A00CC8CE6 /* Preview Assets.xcassets */; };
+		2B5CA8752C01EB6100CC8CE6 /* Charactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8742C01EB6100CC8CE6 /* Charactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2B5CA8652C01EA0900CC8CE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5CA86A2C01EA0A00CC8CE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B5CA8742C01EB6100CC8CE6 /* Charactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				2B5CA8632C01EA0900CC8CE6 /* KUMDORIApp.swift */,
-				2B5CA8652C01EA0900CC8CE6 /* ContentView.swift */,
+				2B5CA8732C01EB3600CC8CE6 /* ViewModel */,
+				2B5CA8722C01EB2F00CC8CE6 /* View */,
+				2B5CA8712C01EB2200CC8CE6 /* Model */,
 				2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */,
 				2B5CA8692C01EA0A00CC8CE6 /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				2B5CA86A2C01EA0A00CC8CE6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B5CA8712C01EB2200CC8CE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B5CA8722C01EB2F00CC8CE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B5CA8652C01EA0900CC8CE6 /* ContentView.swift */,
+				2B5CA8742C01EB6100CC8CE6 /* Charactor.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B5CA8732C01EB3600CC8CE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5CA8662C01EA0900CC8CE6 /* ContentView.swift in Sources */,
+				2B5CA8752C01EB6100CC8CE6 /* Charactor.swift in Sources */,
 				2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
