@@ -9,7 +9,11 @@ import SwiftUI
 
 struct Charactor: View {
     var body: some View {
-        Image(URL(string: <#T##String#>))
+        Image("Kumdori")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 400)
+        
     }
 }
 
