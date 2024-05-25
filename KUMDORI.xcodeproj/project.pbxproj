@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4A71CA2C025FA300B3D991 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71C92C025FA300B3D991 /* LocationManager.swift */; };
+		2B4A71D12C0266BF00B3D991 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71D02C0266BF00B3D991 /* Maps.swift */; };
+		2B4A71DC2C028E6600B3D991 /* KitchenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71DB2C028E6600B3D991 /* KitchenView.swift */; };
+		2B4A71DE2C028E7200B3D991 /* OutsideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71DD2C028E7200B3D991 /* OutsideView.swift */; };
+		2B4A71E02C028E7F00B3D991 /* BedroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71DF2C028E7F00B3D991 /* BedroomView.swift */; };
+		2B4A71E22C028E9400B3D991 /* GroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71E12C028E9400B3D991 /* GroundView.swift */; };
 		2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8632C01EA0900CC8CE6 /* KUMDORIApp.swift */; };
 		2B5CA8682C01EA0A00CC8CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */; };
 		2B5CA86B2C01EA0A00CC8CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA86A2C01EA0A00CC8CE6 /* Preview Assets.xcassets */; };
@@ -15,12 +21,17 @@
 		2B5CA8882C02116A00CC8CE6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8872C02116A00CC8CE6 /* LoadingView.swift */; };
 		2B5CA88B2C02136600CC8CE6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA88A2C02136600CC8CE6 /* MainView.swift */; };
 		2B5CA88D2C0214D600CC8CE6 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA88C2C0214D600CC8CE6 /* algorithm.swift */; };
-		2B5CA88F2C0215F900CC8CE6 /* FoodMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA88E2C0215F900CC8CE6 /* FoodMapKit.swift */; };
-		2B5CA8912C02160900CC8CE6 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8902C02160900CC8CE6 /* Position.swift */; };
+		2B5CA8912C02160900CC8CE6 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8902C02160900CC8CE6 /* Marker.swift */; };
 		2B5CA8932C02243D00CC8CE6 /* icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8922C02243D00CC8CE6 /* icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B4A71C92C025FA300B3D991 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2B4A71D02C0266BF00B3D991 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		2B4A71DB2C028E6600B3D991 /* KitchenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenView.swift; sourceTree = "<group>"; };
+		2B4A71DD2C028E7200B3D991 /* OutsideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideView.swift; sourceTree = "<group>"; };
+		2B4A71DF2C028E7F00B3D991 /* BedroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomView.swift; sourceTree = "<group>"; };
+		2B4A71E12C028E9400B3D991 /* GroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundView.swift; sourceTree = "<group>"; };
 		2B5CA8602C01EA0900CC8CE6 /* KUMDORI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KUMDORI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5CA8632C01EA0900CC8CE6 /* KUMDORIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUMDORIApp.swift; sourceTree = "<group>"; };
 		2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,8 +41,7 @@
 		2B5CA8872C02116A00CC8CE6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2B5CA88A2C02136600CC8CE6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2B5CA88C2C0214D600CC8CE6 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
-		2B5CA88E2C0215F900CC8CE6 /* FoodMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapKit.swift; sourceTree = "<group>"; };
-		2B5CA8902C02160900CC8CE6 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		2B5CA8902C02160900CC8CE6 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 		2B5CA8922C02243D00CC8CE6 /* icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2B5CA88C2C0214D600CC8CE6 /* algorithm.swift */,
-				2B5CA8902C02160900CC8CE6 /* Position.swift */,
+				2B5CA8902C02160900CC8CE6 /* Marker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +110,11 @@
 				2B5CA8922C02243D00CC8CE6 /* icons.swift */,
 				2B5CA8872C02116A00CC8CE6 /* LoadingView.swift */,
 				2B5CA88A2C02136600CC8CE6 /* MainView.swift */,
+				2B4A71DB2C028E6600B3D991 /* KitchenView.swift */,
+				2B4A71DD2C028E7200B3D991 /* OutsideView.swift */,
+				2B4A71DF2C028E7F00B3D991 /* BedroomView.swift */,
+				2B4A71E12C028E9400B3D991 /* GroundView.swift */,
+				2B4A71D02C0266BF00B3D991 /* Maps.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,7 +122,7 @@
 		2B5CA8732C01EB3600CC8CE6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2B5CA88E2C0215F900CC8CE6 /* FoodMapKit.swift */,
+				2B4A71C92C025FA300B3D991 /* LocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +143,8 @@
 			dependencies = (
 			);
 			name = KUMDORI;
+			packageProductDependencies = (
+			);
 			productName = KUMDORI;
 			productReference = 2B5CA8602C01EA0900CC8CE6 /* KUMDORI.app */;
 			productType = "com.apple.product-type.application";
@@ -156,6 +173,8 @@
 				Base,
 			);
 			mainGroup = 2B5CA8572C01EA0900CC8CE6;
+			packageReferences = (
+			);
 			productRefGroup = 2B5CA8612C01EA0900CC8CE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,15 +201,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4A71DE2C028E7200B3D991 /* OutsideView.swift in Sources */,
 				2B5CA88B2C02136600CC8CE6 /* MainView.swift in Sources */,
 				2B5CA88D2C0214D600CC8CE6 /* algorithm.swift in Sources */,
+				2B4A71E02C028E7F00B3D991 /* BedroomView.swift in Sources */,
 				2B5CA8752C01EB6100CC8CE6 /* Charactor.swift in Sources */,
+				2B4A71CA2C025FA300B3D991 /* LocationManager.swift in Sources */,
 				2B5CA8932C02243D00CC8CE6 /* icons.swift in Sources */,
 				2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */,
 				2B5CA8882C02116A00CC8CE6 /* LoadingView.swift in Sources */,
+				2B4A71E22C028E9400B3D991 /* GroundView.swift in Sources */,
 				2B5CA87C2C01EE8600CC8CE6 /* Background.swift in Sources */,
-				2B5CA8912C02160900CC8CE6 /* Position.swift in Sources */,
-				2B5CA88F2C0215F900CC8CE6 /* FoodMapKit.swift in Sources */,
+				2B4A71D12C0266BF00B3D991 /* Maps.swift in Sources */,
+				2B5CA8912C02160900CC8CE6 /* Marker.swift in Sources */,
+				2B4A71DC2C028E6600B3D991 /* KitchenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -306,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

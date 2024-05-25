@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Charactor: View {
+    
     var body: some View {
         Image("Kumdori")
             .resizable()

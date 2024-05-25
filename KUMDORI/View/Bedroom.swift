@@ -1,21 +1,21 @@
 //
-//  MainView.swift
+//  Bedroom.swift
 //  KUMDORI
 //
-//  Created by donghyeon choi on 5/25/24.
+//  Created by donghyeon choi on 5/26/24.
 //
-// TODO: Map, 
 
 import SwiftUI
 
-struct MainView: View {
-   
+struct Bedroom: View {
+    @State var Kumdorie = KumdoriGrow(foodPercent: 0.4, healthPercent: 0, playPercent: 0, energyPercent: 0)
+    
     var body: some View {
         NavigationStack{
         ZStack {
-            Background()
+            Background(color: .blue)
             Charactor()
-            icons()
+            icons(Kumdories: $Kumdorie)
             VStack {
                 
                 Spacer()

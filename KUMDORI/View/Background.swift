@@ -9,14 +9,18 @@
 import SwiftUI
 
 struct Background: View {
+    @State var color: Color = .green
     var body: some View {
         ZStack {
             VStack {
                 Spacer()
-                Image("gress")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    
+                Circle()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 1200, height: 50)
+                    .position(x: 150, y: 1100)
+                    .foregroundColor(color)
+                
+            
             }
             
         }
