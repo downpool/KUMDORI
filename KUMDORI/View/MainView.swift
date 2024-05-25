@@ -12,7 +12,7 @@ struct MainView: View {
         ZStack {
             Background()
             Charactor()
-            
+            icons()
         }
     }
 }

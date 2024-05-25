@@ -17,6 +17,7 @@
 		2B5CA88D2C0214D600CC8CE6 /* algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA88C2C0214D600CC8CE6 /* algorithm.swift */; };
 		2B5CA88F2C0215F900CC8CE6 /* FoodMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA88E2C0215F900CC8CE6 /* FoodMapKit.swift */; };
 		2B5CA8912C02160900CC8CE6 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8902C02160900CC8CE6 /* Position.swift */; };
+		2B5CA8932C02243D00CC8CE6 /* icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8922C02243D00CC8CE6 /* icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2B5CA88C2C0214D600CC8CE6 /* algorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithm.swift; sourceTree = "<group>"; };
 		2B5CA88E2C0215F900CC8CE6 /* FoodMapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMapKit.swift; sourceTree = "<group>"; };
 		2B5CA8902C02160900CC8CE6 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		2B5CA8922C02243D00CC8CE6 /* icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				2B5CA8742C01EB6100CC8CE6 /* Charactor.swift */,
 				2B5CA87B2C01EE8600CC8CE6 /* Background.swift */,
+				2B5CA8922C02243D00CC8CE6 /* icons.swift */,
 				2B5CA8872C02116A00CC8CE6 /* LoadingView.swift */,
 				2B5CA88A2C02136600CC8CE6 /* MainView.swift */,
 			);
@@ -182,6 +185,7 @@
 				2B5CA88B2C02136600CC8CE6 /* MainView.swift in Sources */,
 				2B5CA88D2C0214D600CC8CE6 /* algorithm.swift in Sources */,
 				2B5CA8752C01EB6100CC8CE6 /* Charactor.swift in Sources */,
+				2B5CA8932C02243D00CC8CE6 /* icons.swift in Sources */,
 				2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */,
 				2B5CA8882C02116A00CC8CE6 /* LoadingView.swift in Sources */,
 				2B5CA87C2C01EE8600CC8CE6 /* Background.swift in Sources */,
