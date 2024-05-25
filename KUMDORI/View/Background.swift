@@ -30,5 +30,5 @@ struct Background: View {
 }
 
 #Preview {
-    Background()
+    Background(color: .green)
 }

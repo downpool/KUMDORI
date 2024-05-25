@@ -12,12 +12,13 @@ import CoreLocation
 struct Maps: View {
     @StateObject var locationManager = LocationManager()
     @State var region = MKCoordinateRegion()
+    @State var locations: String = ""
     
     var body: some View {
         Map(coordinateRegion: $region,
             interactionModes: [.all],  // 모든 상호작용 허용
             showsUserLocation: true,  // 사용자 위치 표시
-            annotationItems: foodLocations) { location in
+            annotationItems: locationss.filter { $0.type == locations }) { location in
                 MapAnnotation(coordinate: location.coordinate) {
                     VStack {
                         Image(systemName: "mappin.circle.fill")

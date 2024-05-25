@@ -9,12 +9,14 @@ import SwiftUI
 
 struct BedroomView: View {
     
+    @State var lampOn: Bool = true
     var body: some View {
         NavigationStack{
         ZStack {
-            Background()
+            Background(color: .skyblue)
             Charactor()
             icons()
+            
             VStack {
                 
                 Spacer()

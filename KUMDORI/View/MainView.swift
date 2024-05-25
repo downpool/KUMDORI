@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         NavigationStack{
         ZStack {
-            Background()
+            Background(color: .green).opacity(0.8)
             Charactor()
             icons()
             VStack {
@@ -22,9 +22,29 @@ struct MainView: View {
                 
                 
                 HStack {
-                    NavigationLink(destination: Maps()) {
-                        Image("map")
+                    Spacer()
+                    NavigationLink(destination: Maps(locations: "food")) {
+                        ZStack {
+                            Image("map")
+                            Text("음식")
+                                .font(.system(size: 30))
+                                .background().opacity(0.5)
+                                .foregroundColor(.black)
+                                .cornerRadius(10)
+                        }
                     }
+                    Spacer()
+                    NavigationLink(destination: Maps(locations: "tour")) {
+                        ZStack {
+                            Image("map")
+                            Text("관광")
+                                .font(.system(size: 30))
+                                .background().opacity(0.5)
+                                .foregroundColor(.black)
+                                .cornerRadius(10)
+                        }
+                    }
+                    Spacer()
                     
                 }
             }

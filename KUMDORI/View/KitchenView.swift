@@ -11,7 +11,7 @@ struct KitchenView: View {
     var body: some View {
         NavigationStack{
         ZStack {
-            Background()
+            Background(color: Color(.skyblue))
             Charactor()
             icons()
             VStack {
