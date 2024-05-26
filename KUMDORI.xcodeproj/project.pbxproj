@@ -13,6 +13,7 @@
 		2B4A71DE2C028E7200B3D991 /* OutsideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71DD2C028E7200B3D991 /* OutsideView.swift */; };
 		2B4A71E02C028E7F00B3D991 /* BedroomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71DF2C028E7F00B3D991 /* BedroomView.swift */; };
 		2B4A71E42C02A1E200B3D991 /* MovePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71E32C02A1E100B3D991 /* MovePages.swift */; };
+		2B4A71E62C02B66600B3D991 /* CountMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4A71E52C02B66600B3D991 /* CountMoving.swift */; };
 		2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA8632C01EA0900CC8CE6 /* KUMDORIApp.swift */; };
 		2B5CA8682C01EA0A00CC8CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */; };
 		2B5CA86B2C01EA0A00CC8CE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CA86A2C01EA0A00CC8CE6 /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		2B4A71DD2C028E7200B3D991 /* OutsideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideView.swift; sourceTree = "<group>"; };
 		2B4A71DF2C028E7F00B3D991 /* BedroomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomView.swift; sourceTree = "<group>"; };
 		2B4A71E32C02A1E100B3D991 /* MovePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePages.swift; sourceTree = "<group>"; };
+		2B4A71E52C02B66600B3D991 /* CountMoving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMoving.swift; sourceTree = "<group>"; };
 		2B5CA8602C01EA0900CC8CE6 /* KUMDORI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KUMDORI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5CA8632C01EA0900CC8CE6 /* KUMDORIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUMDORIApp.swift; sourceTree = "<group>"; };
 		2B5CA8672C01EA0A00CC8CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				2B4A71C92C025FA300B3D991 /* LocationManager.swift */,
 				2B4A71E32C02A1E100B3D991 /* MovePages.swift */,
+				2B4A71E52C02B66600B3D991 /* CountMoving.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				2B5CA8752C01EB6100CC8CE6 /* Charactor.swift in Sources */,
 				2B4A71CA2C025FA300B3D991 /* LocationManager.swift in Sources */,
 				2B5CA8932C02243D00CC8CE6 /* icons.swift in Sources */,
+				2B4A71E62C02B66600B3D991 /* CountMoving.swift in Sources */,
 				2B5CA8642C01EA0900CC8CE6 /* KUMDORIApp.swift in Sources */,
 				2B5CA87C2C01EE8600CC8CE6 /* Background.swift in Sources */,
 				2B4A71E42C02A1E200B3D991 /* MovePages.swift in Sources */,
@@ -349,6 +353,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I need your location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I need your location";
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need your Motion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +385,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "I need your location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "I need your location";
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need your Motion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -23,13 +23,11 @@ struct MovePages: View {
                 TabView {
                     ForEach(0 ..< pages.count, id: \.self) { index in
                         pages[index]
-                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                            
                             .background(Color.gray.opacity(0.2))
+                        
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) // 탭 뷰 스타일 설정
-                
             }
             
         }

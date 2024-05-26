@@ -21,6 +21,7 @@ struct Charactor: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 400)
+
         }
         
         

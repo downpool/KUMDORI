@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OutsideView: View {
+    
+    @ObservedObject var coreMotionService = CoreMotionService.shared
+    
     var body: some View {
         NavigationStack{
         ZStack {
@@ -22,17 +25,17 @@ struct OutsideView: View {
                     .font(Font.custom("Inter", size: 30).weight(.bold))
                     .foregroundColor(Color(red: 0.45, green: 0.60, blue: 0.74))
                 Spacer(minLength: 450)
-                    
                 
-                
-                HStack {
-                    NavigationLink(destination: Maps()) {
-                        Image("map")
+                Text("당신이 걸은 수는 :  \(coreMotionService.steps)")
+                    .font(.system(size: 30))
+                    .onChange(of: coreMotionService.steps) { newSteps in
+                        Kumdori.shared.walk(steps: newSteps)
                     }
-                    
+                Spacer()
+                
                 }
-            }  
             }
+            
         }
         
     }

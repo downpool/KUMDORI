@@ -11,7 +11,7 @@ import SwiftUI
 struct KUMDORIApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MovePages()
         }
     }
 }

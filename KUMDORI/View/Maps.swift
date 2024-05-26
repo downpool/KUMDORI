@@ -31,16 +31,16 @@ struct Maps: View {
                 }
         }
             .ignoresSafeArea()
-        .onAppear {
-            locationManager.startTracking()
-            // 초기 지도 위치를 설정하거나 사용자의 현재 위치를 기반으로 설정
-            if let initialLocation = locationManager.currentLocation {
-                updateRegion(to: initialLocation)
-            }
-        }
-        .onChange(of: locationManager.currentLocation) { newLocation in
-            updateRegion(to: newLocation)
-        }
+//        .onAppear {
+//            locationManager.startTracking()
+//            // 초기 지도 위치를 설정하거나 사용자의 현재 위치를 기반으로 설정
+//            if let initialLocation = locationManager.currentLocation {
+//                updateRegion(to: initialLocation)
+//            }
+//        }
+//        .onChange(of: locationManager.currentLocation) { newLocation in
+//            updateRegion(to: newLocation)
+//        }
     }
 
     private func updateRegion(to location: CLLocation?) {

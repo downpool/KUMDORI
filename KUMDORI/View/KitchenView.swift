@@ -20,14 +20,10 @@ struct KitchenView: View {
                 
                 
                 HStack {
-                    NavigationLink(destination: Maps()) {
-                        Image("map")
-                    }
+                   Image("table")
                     
                 }
             }
-                
-               
             }
         }
         
