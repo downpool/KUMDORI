@@ -5,8 +5,6 @@
 //  Created by donghyeon choi on 5/26/24.
 //
 
-// MARK: 리얼타임으로 만보기가 작동하지 않음.
-
 import CoreMotion
 import Combine
 
