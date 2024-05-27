@@ -23,6 +23,7 @@ struct Background: View {
             
         }
         .background(Color(red: 0.92, green: 0.96, blue: 1))
+        // MARK: 왜 이렇게 되는지
 //        .ignoresSafeArea()
     }
 }
