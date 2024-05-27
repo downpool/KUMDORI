@@ -19,8 +19,6 @@ struct Background: View {
                     .frame(width: 1200, height: 50)
                     .position(x: 150, y: 1100)
                     .foregroundColor(color)
-                
-            
             }
             
         }

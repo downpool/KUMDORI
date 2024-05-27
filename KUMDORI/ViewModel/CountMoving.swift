@@ -16,7 +16,7 @@ final class CoreMotionService: ObservableObject {
     
     private init() {
         // 객체 초기화 시 타이머 시작
-        Timer.scheduledTimer(timeInterval: 3.0,
+        Timer.scheduledTimer(timeInterval: 1.0,
                              target: self,
                              selector: #selector(checkSteps),
                              userInfo: nil,
