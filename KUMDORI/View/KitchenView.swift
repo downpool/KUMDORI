@@ -10,20 +10,20 @@ import SwiftUI
 struct KitchenView: View {
     var body: some View {
         NavigationStack{
-        ZStack {
-            Background(color: Color(.skyblue))
-            Charactor()
-            icons()
-            VStack {
-                
-                Spacer()
-                
-                
-                HStack {
-                   Image("table")
+            ZStack {
+                Background(color: Color(.skyblue))
+                Charactor()
+                icons()
+                VStack {
                     
+                    Spacer()
+                    
+                    
+                    HStack {
+                        Image("table")
+                        
+                    }
                 }
-            }
             }
         }
         
