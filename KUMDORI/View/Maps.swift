@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
+// MARK: 기본 위도 경도가 0으로 설정되어 있음.
 struct Maps: View {
     @StateObject var locationManager = LocationManager()
     @State var region = MKCoordinateRegion()

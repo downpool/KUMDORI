@@ -10,7 +10,7 @@ import SwiftUI
 
 struct icons: View {
     
-    
+    // MARK: 페이지를 넘어갈때 값이 일관적이지 않음.
     var body: some View {
         ZStack {
             VStack {

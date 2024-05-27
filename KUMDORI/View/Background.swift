@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// MARK: 페이지를 넘어갈때 잔상이 남음
 struct Background: View {
     @State var color: Color = .green
     var body: some View {
@@ -23,6 +24,7 @@ struct Background: View {
             
         }
         .background(Color(red: 0.92, green: 0.96, blue: 1))
+        // MARK: 너무 날카로움
 //        .ignoresSafeArea()
     }
 }

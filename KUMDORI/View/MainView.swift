@@ -4,7 +4,7 @@
 //
 //  Created by donghyeon choi on 5/25/24.
 //
-// TODO: Map, 
+// TODO: 아이콘이 잘 안눌림.
 
 import SwiftUI
 
