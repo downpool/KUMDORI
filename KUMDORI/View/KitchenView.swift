@@ -15,9 +15,7 @@ struct KitchenView: View {
                 Charactor()
                 icons()
                 VStack {
-                    
                     Spacer()
-                    
                     
                     HStack {
                         Image("table")
@@ -26,10 +24,8 @@ struct KitchenView: View {
                 }
             }
         }
-        
     }
 }
-
 
 #Preview {
     KitchenView()

@@ -11,6 +11,7 @@ import SwiftUI
 struct Charactor: View {
     
     var body: some View {
+        
         if Kumdori.shared.isAdult {
             Image("Kumdori")
                 .resizable()
@@ -21,10 +22,7 @@ struct Charactor: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 400)
-
         }
-        
-        
     }
 }
 

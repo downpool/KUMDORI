@@ -33,12 +33,9 @@ struct OutsideView: View {
                             Kumdori.shared.walk(steps: newSteps)
                         }
                     Spacer()
-                    
                 }
             }
-            
         }
-        
     }
 }
 
