@@ -50,9 +50,7 @@ struct BedroomView: View {
                     Color.clear.ignoresSafeArea()
                 }
             }
-            
         }
-        
     }
 }
 
