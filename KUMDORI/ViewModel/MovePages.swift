@@ -18,20 +18,20 @@ struct MovePages: View {
 
     var body: some View {
         // 스와이프 가능한 탭 뷰
-        NavigationStack {
-            ZStack {
+        ZStack {
+            Color(red: 0.92, green: 0.96, blue: 1).ignoresSafeArea()
+            VStack {
+                Spacer()
                 TabView {
                     ForEach(0 ..< pages.count, id: \.self) { index in
                         pages[index]
-                            .background(Color.gray.opacity(0.2))
-                        
+                            .background(Color(red: 0.92, green: 0.96, blue: 1))
                     }
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always)) // 탭 뷰 스타일 설정
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .ignoresSafeArea()
             }
-            
         }
-        
     }
 }
 

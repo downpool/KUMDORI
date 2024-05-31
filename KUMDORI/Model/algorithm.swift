@@ -7,17 +7,17 @@
 
 import Foundation
 
-class Kumdori {
-    var foodPercent: CGFloat
-    var healthPercent: CGFloat
-    var playPercent: CGFloat
-    var energyPercent: CGFloat
-    var nowLevel: Int
-    var playCount: Int
-    var characterSize: CGFloat
-    var isAdult: Bool
+class Kumdori: ObservableObject {
+    @Published var foodPercent: CGFloat
+    @Published var healthPercent: CGFloat
+    @Published var playPercent: CGFloat
+    @Published var energyPercent: CGFloat
+    @Published var nowLevel: Int
+    @Published var playCount: Int
+    @Published var characterSize: CGFloat
+    @Published var isAdult: Bool
 
-    static let shared = Kumdori(foodPercent: 0.5, healthPercent: 0.5, playPercent: 0.5, energyPercent: 0.5)
+    static let shared = Kumdori(foodPercent: 0.7, healthPercent: 0.8, playPercent: 0.5, energyPercent: 0.7)
 
 //싱글톤 사용
     private init(foodPercent: CGFloat, healthPercent: CGFloat, playPercent: CGFloat, energyPercent: CGFloat) {
@@ -36,8 +36,6 @@ class Kumdori {
         // Timer 설정 - 불 꺼졌을 때 에너지 증가
         Timer.scheduledTimer(timeInterval: 3600, target: self, selector: #selector(increaseEnergy), userInfo: nil, repeats: true)
     }
-
-    
     
     // 수치 감소
     @objc func decreaseStats() {
@@ -72,7 +70,7 @@ class Kumdori {
         Kumdori.shared.healthPercent = min(Kumdori.shared.healthPercent + healthIncrease, 1.0)
     }
 
-    // TODO
+    // TODO: 
     // 장소에 가면 위치로 확인해서 수치 0.5씩 증가
     func visit() {
         Kumdori.shared.playPercent += 0.5

@@ -9,46 +9,55 @@ import SwiftUI
 
 struct BedroomView: View {
     
-    @State var lampOn: Bool = false
+    @State private var lampOn: Bool = false
+    @State private var onStat = false
+    
     var body: some View {
-        NavigationStack{
-            ZStack {
-                Background(color: .skyblue)
-                icons()
-                VStack {
-                    Spacer()
-                    Text("침실")
-                        .bold()
-                        .font(Font.custom("Inter", size: 30).weight(.bold))
-                        .foregroundColor(Color(red: 0.45, green: 0.60, blue: 0.74))
-                    Spacer(minLength: 400)
-                    Spacer()
+        ZStack {
+            Background(color: .skyblue)
+            
+            VStack {
+                Button {
+                    onStat = true
+                } label: {
+                    icons()
                 }
-                VStack {
-                    ZStack {
-                        Image("bed")
-                            .position(x: 200, y: 500)
-                        Image("lamp")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .position(x: 250, y: 300)
-                            .frame(width: 300, height: 300)
-                        
-                    }
+                .sheet(isPresented: $onStat, content: {
+                    Status()
+                })
+                Spacer()
+                Text("침실")
+                    .bold()
+                    .font(Font.custom("Inter", size: 30).weight(.bold))
+                    .foregroundColor(Color(red: 0.45, green: 0.60, blue: 0.74))
+                Spacer(minLength: 470)
+                Spacer()
+            }
+            VStack {
+                ZStack {
+                    Image("bed")
+                        .position(x: 200, y: 500)
+                    
                     Charactor()
                         .aspectRatio(contentMode: .fill)
                         .frame(height: 250)
-                        .position(x: 200)
-                    
-                    Spacer()
                 }
-                Color.black.opacity(lampOn ? 0.5 : 0).ignoresSafeArea()
+            }
+            Color.black.opacity(lampOn ? 0.5 : 0).ignoresSafeArea()
+            VStack {
+                Spacer()
+                
                 Button {
                     lampOn.toggle()
-                    Kumdori.shared.increaseEnergy()
+                    Kumdori.shared.healthPercent += 0.1
                 } label: {
-                    Color.clear.ignoresSafeArea()
+                    Image("lamp")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 95)
                 }
+                Text("Lamp")
+                    .bold()
             }
         }
     }

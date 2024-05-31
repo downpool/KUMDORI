@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct KitchenView: View {
+    
+    @State private var onStat = false
+    
     var body: some View {
-        NavigationStack{
-            ZStack {
-                Background(color: Color(.skyblue))
-                Charactor()
-                icons()
-                VStack {
-                    Spacer()
-                    
-                    HStack {
-                        Image("table")
+        ZStack {
+            Background(color: .skyblue)
+            Charactor()
+            VStack {
+                Button {
+                    onStat = true
+                } label: {
+                    icons()
+                }
+                .sheet(isPresented: $onStat, content: {
+                    Status()
+                })
+                Spacer()
+                
+                HStack {
+                    Image("table")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300)
+                        .clipped()
                         
-                    }
+                    Spacer()
                 }
             }
         }
