@@ -11,14 +11,24 @@ import Combine
 struct OutsideView: View {
     
     @ObservedObject var coreMotionService = CoreMotionService.shared
+    @State var locationManager = LocationManager()
+//    @State var mapGuide = MapGuideView(source: CLLocationCoordinate2D(locationManager.currentLocation), destination: T##CLLocationCoordinate2D)
+    @State private var onStat = false
     
     var body: some View {
         NavigationStack{
             ZStack {
                 Background(color: .brown)
                 Charactor()
-                icons()
                 VStack {
+                    Button {
+                        onStat = true
+                    } label: {
+                        icons()
+                    }
+                    .sheet(isPresented: $onStat, content: {
+                        Status()
+                    })
                     Spacer()
                     
                     Text("운동장")

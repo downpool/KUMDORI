@@ -9,15 +9,24 @@
 import SwiftUI
 
 struct MainView: View {
-   
+    
+    @State private var onStat = false
+    
     var body: some View {
         NavigationStack{
             ZStack {
                 Background(color: .green).opacity(0.8)
-                Charactor()
-                icons()
+                Charactor() 
                 VStack {
-                    
+                    Button {
+                        onStat = true
+                    } label: {
+                        icons()
+                    }
+                    .sheet(isPresented: $onStat, content: {
+                        Status()
+                    })
+
                     Spacer()
                     
                     HStack {

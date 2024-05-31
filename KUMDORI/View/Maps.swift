@@ -9,10 +9,14 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-// MARK: 기본 위도 경도가 0으로 설정되어 있음.
+// MARK: 기본 위도 경도가 0으로 설정되어 있음. -수정 완-
 struct Maps: View {
     @StateObject var locationManager = LocationManager()
-    @State var region = MKCoordinateRegion()
+    @State var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 36.35001, longitude: 127.38489),
+        latitudinalMeters: 1000,  // 확대/축소 범위 조정
+        longitudinalMeters: 1000
+    )
     @State var locations: String = ""
     
     var body: some View {
@@ -31,7 +35,7 @@ struct Maps: View {
                     }
                 }
         }
-            .ignoresSafeArea()
+        .ignoresSafeArea()
         .onAppear {
             locationManager.startTracking()
             // 초기 지도 위치를 설정하거나 사용자의 현재 위치를 기반으로 설정
