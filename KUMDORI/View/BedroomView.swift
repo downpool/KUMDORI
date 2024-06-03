@@ -17,14 +17,6 @@ struct BedroomView: View {
             Background(color: .skyblue)
             
             VStack {
-                Button {
-                    onStat = true
-                } label: {
-                    icons()
-                }
-                .sheet(isPresented: $onStat, content: {
-                    Status()
-                })
                 Spacer()
                 Text("침실")
                     .bold()
@@ -33,6 +25,7 @@ struct BedroomView: View {
                 Spacer(minLength: 470)
                 Spacer()
             }
+            
             VStack {
                 ZStack {
                     Image("bed")
@@ -43,13 +36,23 @@ struct BedroomView: View {
                         .frame(height: 250)
                 }
             }
+            
             Color.black.opacity(lampOn ? 0.5 : 0).ignoresSafeArea()
+            
             VStack {
+                Button {
+                    onStat = true
+                } label: {
+                    icons()
+                }
+                .sheet(isPresented: $onStat, content: {
+                    Status()
+                })
+                
                 Spacer()
                 
                 Button {
                     lampOn.toggle()
-                    Kumdori.shared.healthPercent += 0.1
                 } label: {
                     Image("lamp")
                         .resizable()

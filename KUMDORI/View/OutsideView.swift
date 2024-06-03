@@ -43,6 +43,22 @@ struct OutsideView: View {
                             Kumdori.shared.walk(steps: newSteps)
                         }
                     Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        NavigationLink(destination: Maps(locations: "tour")) {
+                            ZStack {
+                                Image("map")
+                                Text("여행지")
+                                    .font(.system(size: 30))
+                                    .background().opacity(0.5)
+                                    .foregroundColor(.black)
+                                    .cornerRadius(10)
+                            }
+                        }
+                        Spacer()
+                    }
+                    Spacer()
                 }
             }
         }

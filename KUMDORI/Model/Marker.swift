@@ -15,8 +15,15 @@ struct Location: Identifiable {
     let type: String
     let name: String
     let coordinate: CLLocationCoordinate2D
+//    let info: info
 }
- 
+
+// TODO: Make info
+struct info: Identifiable {
+    let id = UUID()
+    
+}
+
 let locationss: [Location] = [
     Location(type: "food", name: "베스타뷔페 대전", coordinate: CLLocationCoordinate2D(latitude: 36.3669824, longitude: 127.3805577)),
     Location(type: "food", name: "떡반집", coordinate: CLLocationCoordinate2D(latitude: 36.35228, longitude: 127.3749107)),
