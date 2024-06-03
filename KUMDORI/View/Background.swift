@@ -29,7 +29,6 @@ struct Background: View {
         .background(Color(red: 0.92, green: 0.96, blue: 1))
         .cornerRadius(20)
         .ignoresSafeArea()
-        // MARK: 너무 날카로움
     }
 }
 

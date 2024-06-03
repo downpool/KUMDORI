@@ -16,12 +16,13 @@ struct icons: View {
         VStack {
             HStack {
                 Spacer()
+                
                 Image("coins")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 55)
+                
                 ZStack(alignment: .bottom) {
-                    
                     Rectangle()
                         .frame(width: 55, height: 58 * kumdori.foodPercent, alignment: .bottom)
                         .foregroundStyle(.green)
@@ -72,8 +73,9 @@ struct icons: View {
                         .padding(10)
                         .border(Color.black, width: 2)
                 }
+                
                 ZStack {
-                    Image(systemName: "star")
+                    Image(systemName: "star.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .bold()

@@ -29,34 +29,12 @@ struct MainView: View {
 
                     Spacer()
                     
-                    HStack {
-                        Spacer()
-                        NavigationLink(destination: Maps(locations: "food")) {
-                            ZStack {
-                                Image("map")
-                                Text("음식")
-                                    .font(.system(size: 30))
-                                    .background().opacity(0.5)
-                                    .foregroundColor(.black)
-                                    .cornerRadius(10)
-                            }
-                        }
+                    Button {
                         
-                        Spacer()
-                        
-                        NavigationLink(destination: Maps(locations: "tour")) {
-                            ZStack {
-                                Image("map")
-                                Text("관광")
-                                    .font(.system(size: 30))
-                                    .background().opacity(0.5)
-                                    .foregroundColor(.black)
-                                    .cornerRadius(10)
-                            }
-                        }
-                        
-                        Spacer()
+                    } label: {
+                        Text("오늘 갔던 곳")
                     }
+
                 }
             }
         }
